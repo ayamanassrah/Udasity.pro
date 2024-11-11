@@ -1,0 +1,33 @@
+h1, h2, h3 {
+  font-weight: bold;
+  color: #333;
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+a {
+  color: #f39c12;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #e67e22;
+}
+
+  
