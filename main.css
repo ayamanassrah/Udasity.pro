@@ -1,3 +1,5 @@
+@import url("typography.css");
+@import url("layout.css");
 * {
   margin: 0;
   padding: 0;
@@ -48,48 +50,11 @@ main {
   padding: 20px;
 }
 
-.topics {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
-}
 
-.topic {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 48%;
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
-.topic:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
 
-.topic img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
 
-.topic button {
-  padding: 10px 20px;
-  background-color: #f39c12;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
 
-.topic button:hover {
-  background-color: #e67e22;
-}
 
 footer {
   background-color: #333;
@@ -98,17 +63,8 @@ footer {
   padding: 15px;
 }
 
-@media (max-width: 768px) {
-  .topics {
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .topic {
-    width: 80%;
-    margin-bottom: 20px;
-  }
-}
+  
 
 @media (max-width: 480px) {
   .navbar h1 {
@@ -119,9 +75,7 @@ footer {
     font-size: 16px;
   }
 
-  .topic {
-    width: 90%;
-  }
+  
 }
 @keyframes fadeIn {
   0% { opacity: 0; }
@@ -133,10 +87,7 @@ main {
   animation: fadeIn 1s ease-in;
 }
 
-/* Hover effect on topic cards */
-.topic {
-  animation: fadeIn 1s ease-in-out;
-}
+
 
   
 .navbar {
@@ -210,3 +161,78 @@ p {
     margin: 10px 0;
   }
 }
+figure {
+  display: inline-block;
+  margin: 20px;
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+figcaption {
+  font-style: italic;
+  color: #666;
+  margin-top: 8px;
+}
+/* Container for Cards */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px; /* Space between each card */
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto; /* Center align container */
+}
+
+.topic.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  flex: 1 1 calc(33.33% - 20px); /* 3 cards per row, with gap */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 100%;
+}
+
+.topic.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.topic.card h2 {
+  font-size: 1.5em;
+  margin: 12px 0;
+}
+
+.topic.card p {
+  font-size: 1em;
+  color: #555;
+  margin: 10px 0;
+}
+
+.topic.card button {
+  background-color: #007BFF;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: auto; 
+}
+
+.topic.card button:hover {
+  background-color: #0056b3;
+}
+
