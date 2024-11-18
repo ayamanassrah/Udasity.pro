@@ -1,0 +1,31 @@
+.topic-detail {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .topic-detail img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .topic-detail h2 {
+    font-size: 32px;
+  }
+  
+  .topic-detail p {
+    font-size: 18px;
+    color: #666;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
